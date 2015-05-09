@@ -16,6 +16,14 @@ class ReadableRandom
     end
   end
 
+  def self.get_list(size, amt = 1)
+    arr = []
+    amt.times do
+      arr << get(size)
+    end
+    arr
+  end
+
   def self.hex(size)
     random_string(size).unpack("H*")[0][0...size]
   end
