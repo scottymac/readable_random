@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Michael Grosser"]
-  s.date = %q{2009-11-22}
+  s.authors = ["Michael Grosser", "Scott McMillin"]
+  s.date = %q{2015-05-09}
   s.description = %q{Readable random strings for coupons or tokens}
   s.email = %q{grosser.michael@gmail.com}
   s.extra_rdoc_files = [
