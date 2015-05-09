@@ -6,7 +6,7 @@ class ReadableRandom
   NON_READABLE = %w[o O 0 1 l / = +]
 
   def self.get(size)
-    try = random_string(size * 2)
+    try = random_string(size * 2).upcase
     try = try.split('').reject{|x| NON_READABLE.include? x}.join('')
 
     if try.length < size #too many excluded characters !?

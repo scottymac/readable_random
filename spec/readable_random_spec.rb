@@ -1,4 +1,4 @@
-require 'spec/spec_helper'
+require './spec/spec_helper'
 
 describe ReadableRandom do
   def set(method, size)
@@ -27,8 +27,8 @@ describe ReadableRandom do
 
     it "does not contain hard to read chars" do
       set = set(:get, 7)
-      ReadableRandom::NON_READABLE.each do |ambiguouse_letter|
-        (set * '').should_not include(ambiguouse_letter)
+      ReadableRandom::NON_READABLE.each do |ambiguous_letter|
+        (set * '').should_not include(ambiguous_letter)
       end
     end
   end
